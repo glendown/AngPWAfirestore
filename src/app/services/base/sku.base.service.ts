@@ -102,6 +102,61 @@ export class SkuBaseService {
 
     // CRUD METHODS
 
+    /**
+    * SkuService.create
+    *   @description CRUD ACTION create
+    *
+    */
+    create(item: Sku): Promise<DocumentReference> {
+        return this.skuCollection.add(item);
+    }
+
+    /**
+    * SkuService.delete
+    *   @description CRUD ACTION delete
+    *   @param ObjectId id Id
+    *
+    */
+    remove(id: string) {
+        const itemDoc: AngularFirestoreDocument<any> = this.skuCollection.doc(id);
+        itemDoc.delete();
+    }
+
+    /**
+    * SkuService.get
+    *   @description CRUD ACTION get
+    *   @param ObjectId id Id resource
+    *
+    */
+    get(id: string): AngularFirestoreDocument<Sku> {
+        return this.afs.doc<Sku>('sku/' + id);
+    }
+
+    /**
+    * SkuService.list
+    *   @description CRUD ACTION list
+    *
+    */
+    list(): Observable<Sku[]> {
+        return this.afs.collection('sku').snapshotChanges().pipe(
+            map(actions => actions.map(a => {
+                const data = a.payload.doc.data() as Sku;
+                const id = a.payload.doc.id;
+                return { id, ...data };
+            }))
+        );
+    }
+
+    /**
+    * SkuService.update
+    *   @description CRUD ACTION update
+    *   @param ObjectId id Id
+    *
+    */
+    update(itemDoc: AngularFirestoreDocument<Sku>, item: Sku): Promise<void> {
+        return itemDoc.update(item);
+    }
+
 
     // Custom APIs
 

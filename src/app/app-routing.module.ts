@@ -45,6 +45,8 @@ const routes: Routes = [
     /* START MY VIEWS */
 
     { path: 'home', loadChildren: './pages/home/home.module#HomeModule', canActivate: [AuthGuard] },
+    { path: 'skus/:id', loadChildren: './pages/sku-edit/sku-edit.module#SkuEditModule', canActivate: [AuthGuard] },
+    { path: 'skus', loadChildren: './pages/sku-list/sku-list.module#SkuListModule', canActivate: [AuthGuard] },
     { path: 'users/:id', loadChildren: './pages/user-edit/user-edit.module#UserEditModule', canActivate: [AuthGuard] },
     { path: 'users', loadChildren: './pages/user-list/user-list.module#UserListModule', canActivate: [AuthGuard] },
 

@@ -29,34 +29,12 @@
 * You will get 10% discount for each one of your friends
 * 
 */
-import { NgModule } from '@angular/core';
+import { ActivityBase } from './base/activity.base';
 
-/* START MY SERVICES IMPORTS */
-// Do not edit this comment content, it will be overwritten in next Skaffolder generation
-import { ActivityService } from './services/activity.service';
-import { SkuService } from './services/sku.service';
-import { UserService } from './services/user.service';
+/**
+ * YOU CAN OVERRIDE HERE ActivityBase.ts
+ */
+export interface Activity extends ActivityBase {
 
-/* END MY SERVICES IMPORTS */
-
-import { AuthGuard } from './security/auth.guard';
-import { AuthenticationService } from './security/authentication.service';
-
-@NgModule({
-  imports: [],
-  providers: [
-    /* START PROVIDERS */
-// Do not edit this comment content, it will be overwritten in next Skaffolder generation
-    ActivityService,
-    SkuService,
-    UserService,
- /* END PROVIDERS */
-
-    // SECURITY
-    AuthGuard,
-    AuthenticationService,
-  ],
-  exports: []
-})
-export class CoreModule {
+    // Insert here your custom attributes and function
 }

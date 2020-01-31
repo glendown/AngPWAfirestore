@@ -29,32 +29,20 @@
 * You will get 10% discount for each one of your friends
 * 
 */
-import { NgModule } from '@angular/core';
+// BASE SERVICE
+import { SkuBaseService } from './base/sku.base.service';
 
-/* START MY SERVICES IMPORTS */
-// Do not edit this comment content, it will be overwritten in next Skaffolder generation
-import { SkuService } from './services/sku.service';
-import { UserService } from './services/user.service';
 
-/* END MY SERVICES IMPORTS */
+// start documentation
+/**
+ * Custom APIs
+ *
+ */
+// end documentation
 
-import { AuthGuard } from './security/auth.guard';
-import { AuthenticationService } from './security/authentication.service';
+/**
+ * YOU CAN OVERRIDE HERE SkuBaseService
+ */
+export class SkuService extends SkuBaseService {
 
-@NgModule({
-  imports: [],
-  providers: [
-    /* START PROVIDERS */
-// Do not edit this comment content, it will be overwritten in next Skaffolder generation
-    SkuService,
-    UserService,
- /* END PROVIDERS */
-
-    // SECURITY
-    AuthGuard,
-    AuthenticationService,
-  ],
-  exports: []
-})
-export class CoreModule {
 }

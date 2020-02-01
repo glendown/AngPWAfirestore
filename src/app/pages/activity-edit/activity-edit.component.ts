@@ -42,7 +42,7 @@ import { SkuService } from '../../services/sku.service';
 
 import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 import { Sku } from '../../domain/ang-pwafirestore_db/sku';
-import { Activity } from '../../domain/ang-pwafirestore_db/activity';
+
 
 // START - USED SERVICES
 /**

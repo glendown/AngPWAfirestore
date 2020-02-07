@@ -54,10 +54,6 @@ import { Timesheet } from '../../domain/ang-pwafirestore_db/timesheet';
 		},
 		//RELATIONS
 		//EXTERNAL RELATIONS
-		Timesheets: {
-			type: Schema.ObjectId,
-			ref : "Activity"
-		},
 	}
  *
  */

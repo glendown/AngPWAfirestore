@@ -13,23 +13,7 @@ import { Schedule } from '../../domain/ang-pwafirestore_db/schedule';
 import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 
 // START - USED SERVICES
-/**
-* ScheduleService.create
-*	@description CRUD ACTION create
-*
-* ScheduleService.update
-*	@description CRUD ACTION update
-*	@param ObjectId id Id
-*
-* ScheduleService.get
-*	@description CRUD ACTION get
-*	@param ObjectId id Id resource
-*
-* ActivityService.findByAllocations
-*	@description CRUD ACTION findByAllocations
-*	@param Objectid key Id della risorsa Allocations da cercare
-*
-*/
+
 // END - USED SERVICES
 
 /**

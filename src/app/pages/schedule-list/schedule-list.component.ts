@@ -8,15 +8,7 @@ import { ScheduleService } from '../../services/schedule.service';
 import { Schedule } from '../../domain/ang-pwafirestore_db/schedule';
 
 // START - USED SERVICES
-/**
-* ScheduleService.delete
-*	@description CRUD ACTION delete
-*	@param ObjectId id Id
-*
-* ScheduleService.list
-*	@description CRUD ACTION list
-*
-*/
+
 // END - USED SERVICES
 
 /**

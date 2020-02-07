@@ -25,10 +25,6 @@ import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 *	@description CRUD ACTION get
 *	@param ObjectId id Id resource
 *
-* ActivityService.findByTimesheets
-*	@description CRUD ACTION findByTimesheets
-*	@param Objectid key Id della risorsa Timesheets da cercare
-*
 */
 // END - USED SERVICES
 

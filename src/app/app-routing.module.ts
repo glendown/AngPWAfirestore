@@ -44,6 +44,10 @@ const routes: Routes = [
 
     /* START MY VIEWS */
 
+    { path: 'activitys/:id', loadChildren: './pages/activity-edit/activity-edit.module#ActivityEditModule', canActivate: [AuthGuard] },
+    { path: 'activitys/:id', loadChildren: './pages/activity-edit/activity-edit.module#ActivityEditModule', canActivate: [AuthGuard] },
+    { path: 'activitys', loadChildren: './pages/activity-list/activity-list.module#ActivityListModule', canActivate: [AuthGuard] },
+    { path: 'activitys', loadChildren: './pages/activity-list/activity-list.module#ActivityListModule', canActivate: [AuthGuard] },
     { path: 'home', loadChildren: './pages/home/home.module#HomeModule', canActivate: [AuthGuard] },
     { path: 'schedules/:id', loadChildren: './pages/schedule-edit/schedule-edit.module#ScheduleEditModule', canActivate: [AuthGuard] },
     { path: 'schedules', loadChildren: './pages/schedule-list/schedule-list.module#ScheduleListModule', canActivate: [AuthGuard] },

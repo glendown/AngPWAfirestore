@@ -39,12 +39,8 @@ import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 		description: {
 			type: 'String'
 		},
-		order: {
-			type: 'Number',
-			required : true
-		},
 		parent: {
-			type: 'Custom',
+			type: 'String',
 			required : true
 		},
 		title: {
@@ -53,14 +49,6 @@ import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 		},
 		//RELATIONS
 		//EXTERNAL RELATIONS
-		Allocations: {
-			type: Schema.ObjectId,
-			ref : "Activity"
-		},
-		Timesheets: {
-			type: Schema.ObjectId,
-			ref : "Activity"
-		},
 	}
  *
  */
@@ -96,38 +84,6 @@ export class ActivityBaseService {
     remove(id: string) {
         const itemDoc: AngularFirestoreDocument<any> = this.activityCollection.doc(id);
         itemDoc.delete();
-    }
-
-    /**
-    * ActivityService.findByAllocations
-    *   @description CRUD ACTION findByAllocations
-    *   @param Objectid key Id della risorsa Allocations da cercare
-    *
-    */
-    findByAllocations(id: string): Observable<any[]> {
-        return this.afs.collection('activity', ref => ref.where('Allocations', '==', id)).snapshotChanges().pipe(
-            map(actions => actions.map(a => {
-                const data = a.payload.doc.data() as Activity;
-                const id = a.payload.doc.id;
-                return { id, ...data };
-            }))
-        );
-    }
-
-    /**
-    * ActivityService.findByTimesheets
-    *   @description CRUD ACTION findByTimesheets
-    *   @param Objectid key Id della risorsa Timesheets da cercare
-    *
-    */
-    findByTimesheets(id: string): Observable<any[]> {
-        return this.afs.collection('activity', ref => ref.where('Timesheets', '==', id)).snapshotChanges().pipe(
-            map(actions => actions.map(a => {
-                const data = a.payload.doc.data() as Activity;
-                const id = a.payload.doc.id;
-                return { id, ...data };
-            }))
-        );
     }
 
     /**

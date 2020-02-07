@@ -16,8 +16,6 @@
  *  -- THIS FILE WILL BE OVERWRITTEN ON THE NEXT SKAFFOLDER'S CODE GENERATION --
  *
  */
-import { Schedule } from '../schedule';
-import { Timesheet } from '../timesheet';
 
 /**
  * This is the model of Activity object
@@ -27,11 +25,6 @@ export interface ActivityBase {
 
     id: string;
     description?: string;
-    order: number;
     parent: string;
     title: string;
-    // Relations Allocations
-    Allocations: Schedule | string;
-    // Relations Timesheets
-    Timesheets: Timesheet | string;
 }

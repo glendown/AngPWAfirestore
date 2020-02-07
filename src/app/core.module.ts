@@ -33,6 +33,16 @@ import { NgModule } from '@angular/core';
 
 /* START MY SERVICES IMPORTS */
 // Do not edit this comment content, it will be overwritten in next Skaffolder generation
+import { ActivityService } from './services/activity.service';
+import { ActivityService } from './services/activity.service';
+import { ScheduleService } from './services/schedule.service';
+import { ScheduleService } from './services/schedule.service';
+import { SkuService } from './services/sku.service';
+import { SkuService } from './services/sku.service';
+import { TimesheetService } from './services/timesheet.service';
+import { TimesheetService } from './services/timesheet.service';
+import { UserService } from './services/user.service';
+import { UserService } from './services/user.service';
 
 /* END MY SERVICES IMPORTS */
 
@@ -44,6 +54,16 @@ import { AuthenticationService } from './security/authentication.service';
   providers: [
     /* START PROVIDERS */
 // Do not edit this comment content, it will be overwritten in next Skaffolder generation
+    ActivityService,
+    ActivityService,
+    ScheduleService,
+    ScheduleService,
+    SkuService,
+    SkuService,
+    TimesheetService,
+    TimesheetService,
+    UserService,
+    UserService,
  /* END PROVIDERS */
 
     // SECURITY

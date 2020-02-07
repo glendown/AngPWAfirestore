@@ -37,10 +37,6 @@ import { UserBaseService } from './base/user.base.service';
 /**
  * Custom APIs
  *
- * Service.changePassword
- *	@description Change password of user from admin
- *	@returns object
- *
  */
 // end documentation
 

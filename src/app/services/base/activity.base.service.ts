@@ -80,11 +80,11 @@ import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 		},
 		//RELATIONS
 		//EXTERNAL RELATIONS
-		resources: {
+		Allocations: {
 			type: Schema.ObjectId,
 			ref : "Activity"
 		},
-		subactivities: {
+		parent: {
 			type: Schema.ObjectId,
 			ref : "Activity"
 		},

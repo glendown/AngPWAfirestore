@@ -46,13 +46,13 @@ import { User } from '../../domain/ang-pwafirestore_db/user';
 * UserService.create
 *	@description CRUD ACTION create
 *
-* UserService.get
-*	@description CRUD ACTION get
-*	@param ObjectId id Id resource
-*
 * UserService.update
 *	@description CRUD ACTION update
 *	@param ObjectId id Id
+*
+* UserService.get
+*	@description CRUD ACTION get
+*	@param ObjectId id Id resource
 *
 */
 // END - USED SERVICES

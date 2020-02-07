@@ -46,22 +46,22 @@ import { Sku } from '../../domain/ang-pwafirestore_db/sku';
 
 // START - USED SERVICES
 /**
-* ActivityService.create
-*	@description CRUD ACTION create
-*
-* ActivityService.get
-*	@description CRUD ACTION get
-*	@param ObjectId id Id resource
-*
 * SkuService.list
-*	@description CRUD ACTION list
-*
-* ActivityService.list
 *	@description CRUD ACTION list
 *
 * ActivityService.update
 *	@description CRUD ACTION update
 *	@param ObjectId id Id
+*
+* ActivityService.get
+*	@description CRUD ACTION get
+*	@param ObjectId id Id resource
+*
+* ActivityService.create
+*	@description CRUD ACTION create
+*
+* ActivityService.list
+*	@description CRUD ACTION list
 *
 */
 // END - USED SERVICES

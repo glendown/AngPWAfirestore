@@ -40,12 +40,12 @@ import { Activity } from '../../domain/ang-pwafirestore_db/activity';
 
 // START - USED SERVICES
 /**
+* ActivityService.list
+*	@description CRUD ACTION list
+*
 * ActivityService.delete
 *	@description CRUD ACTION delete
 *	@param ObjectId id Id
-*
-* ActivityService.list
-*	@description CRUD ACTION list
 *
 */
 // END - USED SERVICES

@@ -47,7 +47,7 @@
  *  -- THIS FILE WILL BE OVERWRITTEN ON THE NEXT SKAFFOLDER'S CODE GENERATION --
  *
  */
-import { Sku } from '../sku';
+import { Schedule } from '../schedule';
 import { Activity } from '../activity';
 
 /**
@@ -60,8 +60,8 @@ export interface ActivityBase {
     Description?: string;
     Order: number;
     Title: string;
-    // Relations resources
-    resources: Sku | string;
-    // Relations subactivities
-    subactivities: Activity | string;
+    // Relations Allocations
+    Allocations: Schedule | string;
+    // Relations parent
+    parent: Activity | string;
 }

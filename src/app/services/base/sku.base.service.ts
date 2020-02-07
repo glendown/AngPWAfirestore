@@ -85,9 +85,9 @@ import { Sku } from '../../domain/ang-pwafirestore_db/sku';
 		},
 		//RELATIONS
 		//EXTERNAL RELATIONS
-		resources: {
+		Allocations: {
 			type: Schema.ObjectId,
-			ref : "Activity"
+			ref : "Sku"
 		},
 	}
  *

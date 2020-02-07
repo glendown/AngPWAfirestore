@@ -44,13 +44,7 @@ const routes: Routes = [
 
     /* START MY VIEWS */
 
-    { path: 'activitys/:id', loadChildren: './pages/activity-edit/activity-edit.module#ActivityEditModule', canActivate: [AuthGuard] },
-    { path: 'activitys', loadChildren: './pages/activity-list/activity-list.module#ActivityListModule', canActivate: [AuthGuard] },
     { path: 'home', loadChildren: './pages/home/home.module#HomeModule', canActivate: [AuthGuard] },
-    { path: 'schedules/:id', loadChildren: './pages/schedule-edit/schedule-edit.module#ScheduleEditModule', canActivate: [AuthGuard] },
-    { path: 'schedules', loadChildren: './pages/schedule-list/schedule-list.module#ScheduleListModule', canActivate: [AuthGuard] },
-    { path: 'timesheets/:id', loadChildren: './pages/timesheet-edit/timesheet-edit.module#TimesheetEditModule', canActivate: [AuthGuard] },
-    { path: 'timesheets', loadChildren: './pages/timesheet-list/timesheet-list.module#TimesheetListModule', canActivate: [AuthGuard] },
     { path: 'users/:id', loadChildren: './pages/user-edit/user-edit.module#UserEditModule', canActivate: [AuthGuard] },
     { path: 'users', loadChildren: './pages/user-list/user-list.module#UserListModule', canActivate: [AuthGuard] },
 
